@@ -5,8 +5,55 @@ body{
     background-color: #222C32;
     color: #EEF4F4 ;
     font-family: "Nunito", Arial;
+    box-sizing: border-box;
 }
+@media screen and (min-width: 600px) {
+   
+   .container{
+       width: 600px;
+       height: 600px;
+       /* outline: lightcoral solid 2px; */
+       word-wrap: break-word;
 
+   } .title{
+        margin: 6vw;
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    div.title{
+        margin: 10px;
+       
+    }
+    div.title h1{
+        font-size: max(3vw, 30px);
+    }
+
+    div#current-time {
+       
+        padding: 2% 10%;
+      
+        font-size: 59.9091px;
+        border-radius: 6px;
+       margin: 0 30px 50px 30px;
+       line-height: 59.9091px;
+       
+      
+    }
+    div#timer{
+        word-wrap: break-word
+    }
+    span#minutes, span#semicolon, span#seconds{
+      font-size: 119.818px;
+        }
+        button#reset-timer.btn.btn-secondary{
+            font-size: 16px;
+            padding: 2.995px 9.585px;
+        }
+        button#mixBut.btn.btn-secondary{
+            font-size: 23.9636px;
+
+        }
+  }
 /* .back{
     background-color: #343D46 ;
 } */
@@ -21,6 +68,8 @@ body{
 .container{
  
     box-sizing: border-box;
+    max-width: 600px;
+    min-height: 200px;
     
 }
 /* p{
@@ -108,12 +157,7 @@ a.nav-link:hover{
     background-color: #D0E0E1 ;
     color: #36454F ;  
 }
-#reset-timer{
-    /* font-size: 1.5rem; */
-    padding: 1% 5%;
-    /* vertical-align: middle;
-    text-align: center; */
-}
+
 /* #task{
     border-radius: 12px !important;  
     box-sizing: border-box;
@@ -131,7 +175,7 @@ a.nav-link:hover{
 
 #reset-timer{
     border-radius: 50%;
-    padding: 1vw 1.6vw 1vw 1.6vw;
+    padding: .5vw 1.6vw .5vw 1.6vw;
     
 }
  #edit-task{

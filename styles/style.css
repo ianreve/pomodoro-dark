@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap');
+body{
+    text-align: center;
+    background-color: #222C32;
+    color: #EEF4F4 ;
+    font-family: "Nunito", Arial;
+}
+
+/* .back{
+    background-color: #343D46 ;
+} */
+/* .container{
+    background-color: #222C32;
+} */
+.title{
+    margin: 6vw;
+    box-sizing: border-box;
+    /* background-color: #222C32; */
+}
+.container{
+ 
+    box-sizing: border-box;
+    
+}
+/* p{
+   
+    background-color: #222C32;
+} */
+span#minutes, span#semicolon, span#seconds{
+margin: 0;
+}
+
+#current-time {
+    background-color: #536878;
+    padding: 2% 10%;
+    color: #EEF4F4;
+    font-size: 10vw;
+    border-radius: 6px;
+   margin: 0 3vw 5vw 3vw;
+   line-height: 10vw;
+   
+  
+}
+#timer {
+    /* outline: #EEF4F4 2px solid; */
+    border-radius: 12px !important;  
+    box-sizing: border-box;
+    background-color: #536878;
+    margin: 0 3% 5% 3%;
+    
+}
+.stop-time, #minutes, #semicolon, #seconds{
+    font-size: 20vw ;
+
+    margin-right: 2%;
+}
+#stop-timer-container{
+    background-color: #536878 ;
+}
+.nav.nav-pills.nav-fill {
+   
+    color: #EEF4F4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 2.5% 5%;
+    
+}
+.active{
+    background-color: #36454F !important;
+}
+
+a.nav-link{
+    color: #EEF4F4;
+    margin: 0 1% ;
+
+    
+}
+/* a.nav-link :active{
+    color: #EEF4F4;
+    background-color: #36454F !important;
+} */
+a.nav-link:hover{
+    background-color: #36454F ;
+    color: #EEF4F4;
+}
+#stop-timer-container, #task{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+ 
+}
+.time-center, .task-center{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+#mixBut{
+    padding: .5% 10%;
+    margin: 5%;
+    font-size: 4vw;
+   
+}
+.btn{
+    background-color: #D0E0E1 ;
+    color: #36454F ;  
+}
+#reset-timer{
+    /* font-size: 1.5rem; */
+    padding: 1% 5%;
+    /* vertical-align: middle;
+    text-align: center; */
+}
+/* #task{
+    border-radius: 12px !important;  
+    box-sizing: border-box;
+   
+    margin: 0 3% 5% 3%;
+} */
+#task-name{
+    /* margin: 5% 2.5; */
+    font-size: 2rem;
+    padding-right: 10%;
+    float: left;
+    
+    /* margin-right: 1%; */
+} 
+
+#reset-timer{
+    border-radius: 50%;
+    padding: 1vw 1.6vw 1vw 1.6vw;
+    
+}
+ #edit-task{
+     border-radius: 50%;
+     float: right;
+ }
+ /* #navbar a.nav-link:active{
+    background-color: rgb(193, 51, 169) !important;  
+ } */

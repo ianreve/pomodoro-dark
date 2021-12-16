@@ -1,0 +1,71 @@
+
+// //new timer try using local storage and setInterval 
+// const sound = document.querySelector("audio");
+// const minutes = document.querySelector('#minutes');
+// const seconds = document.querySelector('#seconds');
+
+// const start = document.querySelector('#start');
+// localStorage.setItem('btn', 'focus');
+
+// let initial, totalsecs, stop, mins, secs;
+
+// start.addEventListener(onclick, () => {
+//     let btn = localStorage.getItem('btn');
+
+//     if (btn == "focus"){
+//         mins += localStorage.getItem("focustime");
+
+//     }
+//     else if (btn == "shortbreak"){
+//         mins += localStorage.getItem("shorbreak");
+
+//     }
+//     else{
+//      mins += localStorage.getItem("longbreak");
+
+//     }
+//     secs = mins * 60;
+//     totalsecs = mins * 60;
+//     setTimeout(decremetn(), 60);
+// // start.style.transfrom = 'scale(0)';
+//     stop = false;
+
+
+
+// })
+// function decrement(){
+//     minutes.textContent = Math.floor(seconds / 60);
+//     seconds.textContent = secs % 60 > 9 ? secs % 60 : `0${secs % 60}`;
+
+//     if(secs > 0){
+//         seconds--;
+//         initial = window.setTimeout('decrement()', 1000)
+
+//     }else{
+//         mins = 0;
+//         secs = 0;
+//         sound.play();
+//         let btn = localStorage.getItem("btn");
+
+//         if(btn == 'focus'){
+//             start.textContent = 'start break';
+//             start.classList.add("break");
+//             localStorage.setItem("btn, break");
+
+//         }else{
+
+//             start.classList.remove("break");
+//             start.textContent = 'start focus';
+//             localStorage.setItem("btn, focus");
+//         }
+//         start.style.transform = "scale(1)";
+
+//     }
+
+
+// }
+
+
+
+
+

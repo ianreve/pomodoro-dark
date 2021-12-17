@@ -1,187 +1,190 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap');
-body{
+
+body {
     text-align: center;
     background-color: #222C32;
-    color: #EEF4F4 ;
+    color: #EEF4F4;
     font-family: "Nunito", Arial;
     box-sizing: border-box;
 }
-@media screen and (min-width: 600px) {
-   
-   .container{
-       width: 600px;
-       height: 600px;
-       /* outline: lightcoral solid 2px; */
-       word-wrap: break-word;
 
-   } .title{
-        margin: 6vw;
+@media screen and (min-width: 600px) {
+
+    .container {
+        width: 600px;
+        height: 600px;
+        
+        word-wrap: break-word;
+
+    }
+
+    div.title {
+        margin: 35.820px;
         box-sizing: border-box;
         font-size: 10px;
+        word-wrap: break-word;
     }
-    div.title{
-        margin: 10px;
-       
-    }
-    div.title h1{
-        font-size: max(3vw, 30px);
-    }
+
+   
 
     div#current-time {
-       
+
         padding: 2% 10%;
-      
+
         font-size: 59.9091px;
         border-radius: 6px;
-       margin: 0 30px 50px 30px;
-       line-height: 59.9091px;
-       
-      
+        margin: 0 30px 50px 30px;
+        line-height: 59.9091px;
+
+
     }
-    div#timer{
+
+    div#timer {
         word-wrap: break-word
     }
-    span#minutes, span#semicolon, span#seconds{
-      font-size: 119.818px;
-        }
-        button#reset-timer.btn.btn-secondary{
-            font-size: 16px;
-            padding: 2.995px 9.585px;
-        }
-        button#mixBut.btn.btn-secondary{
-            font-size: 23.9636px;
 
-        }
-  }
-/* .back{
-    background-color: #343D46 ;
-} */
-/* .container{
-    background-color: #222C32;
-} */
-.title{
-    margin: 6vw;
-    box-sizing: border-box;
-    /* background-color: #222C32; */
+    span#minutes,
+    span#semicolon,
+    span#seconds {
+        font-size: 119.818px;
+    }
+
+    button#reset-timer.btn.btn-secondary {
+        font-size: 16px;
+        padding: 2.995px 9.585px;
+    }
+
+    button#mixBut.btn.btn-secondary {
+        font-size: 23.9636px;
+
+    }
 }
-.container{
- 
+
+.title {
+    margin: 6vw;
+   
+}
+
+.container {
+
     box-sizing: border-box;
     max-width: 600px;
     min-height: 200px;
-    
+
 }
-/* p{
-   
-    background-color: #222C32;
-} */
-span#minutes, span#semicolon, span#seconds{
-margin: 0;
+
+
+span#minutes,
+span#semicolon,
+span#seconds {
+    margin: 0;
 }
 
 #current-time {
     background-color: #536878;
     padding: 2% 10%;
-    color: #EEF4F4;
+    
     font-size: 10vw;
     border-radius: 6px;
-   margin: 0 3vw 5vw 3vw;
-   line-height: 10vw;
-   
-  
+    margin: 0 3vw 5vw 3vw;
+    line-height: 10vw;
+
+
 }
+
 #timer {
-    /* outline: #EEF4F4 2px solid; */
-    border-radius: 12px !important;  
-    box-sizing: border-box;
+   
+    border-radius: 12px !important;
+   
     background-color: #536878;
     margin: 0 3% 5% 3%;
-    
+
 }
-.stop-time, #minutes, #semicolon, #seconds{
-    font-size: 20vw ;
+
+.stop-time,
+#minutes,
+#semicolon,
+#seconds {
+    font-size: 20vw;
 
     margin-right: 2%;
 }
-#stop-timer-container{
-    background-color: #536878 ;
-}
+
+
+
 .nav.nav-pills.nav-fill {
-   
+
     color: #EEF4F4;
-    box-sizing: border-box;
-    border-radius: 12px;
+  
     padding: 2.5% 5%;
-    
-}
-.active{
-    background-color: #36454F !important;
-}
-
-a.nav-link{
-    color: #EEF4F4;
-    margin: 0 1% ;
-
-    
-}
-/* a.nav-link :active{
-    color: #EEF4F4;
-    background-color: #36454F !important;
-} */
-a.nav-link:hover{
-    background-color: #36454F ;
-    color: #EEF4F4;
-}
-#stop-timer-container, #task{
+    word-break: break;
     box-sizing: border-box;
+    word-break: break-word;
+
+}
+
+.active {
+    background-color: #36454F !important;
+}
+
+a.nav-link, a.nav-link.active {
+    color: #EEF4F4;
+    margin: 0 1%;
+
+
+}
+
+
+a.nav-link:hover {
+    background-color: #36454F;
+    color: #EEF4F4;
+}
+
+#stop-timer-container,
+#task {
+    
     display: flex;
     align-items: center;
-    
- 
+
+
 }
-.time-center, .task-center{
-    display: flex;
+
+.time-center,
+.task-center {
+    display: flex; 
     margin: 0 auto;
     align-items: center;
-    
+
 }
 
-#mixBut{
+#mixBut {
     padding: .5% 10%;
     margin: 5%;
     font-size: 4vw;
-   
-}
-.btn{
-    background-color: #D0E0E1 ;
-    color: #36454F ;  
+
 }
 
-/* #task{
-    border-radius: 12px !important;  
-    box-sizing: border-box;
-   
-    margin: 0 3% 5% 3%;
-} */
-#task-name{
-    /* margin: 5% 2.5; */
+.btn {
+    background-color: #D0E0E1;
+    color: #36454F;
+}
+
+
+#task-name {
+    
     font-size: 2rem;
     padding-right: 10%;
-    float: left;
-    
-    /* margin-right: 1%; */
-} 
+ 
+}
 
-#reset-timer{
+#reset-timer {
     border-radius: 50%;
     padding: .5vw 1.6vw .5vw 1.6vw;
+
+}
+
+#edit-task {
+    border-radius: 50%;
     
 }
- #edit-task{
-     border-radius: 50%;
-     float: right;
- }
- /* #navbar a.nav-link:active{
-    background-color: rgb(193, 51, 169) !important;  
- } */
+

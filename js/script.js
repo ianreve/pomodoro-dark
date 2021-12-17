@@ -3,29 +3,29 @@ var audio = new Audio('https://soundbible.com/mp3/service-bell_daniel_simion.mp3
 
 // Display for current time
 var dt = new Date();
-document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
+document.getElementById('current-time').textContent = dt.toLocaleTimeString(); //loads at start
 
 function time(currentTime) {
 
     var dt = new Date();
-    document.getElementById('current-time').innerHTML = dt.toLocaleTimeString();
+    document.getElementById('current-time').textContent = dt.toLocaleTimeString();
 }
 setInterval(time, 1000);
 
 //Nav Choices Function to ba called 
 function pomodoro() {
-    document.getElementById("minutes").innerHTML = 25;
-    document.getElementById("seconds").innerHTML = `0${0}`;
+    document.getElementById("minutes").textContent = 25;
+    document.getElementById("seconds").textContent = `0${0}`;
 }
 
 function shortBreak() {
-    document.getElementById("minutes").innerHTML = `0${5}`;
-    document.getElementById("seconds").innerHTML = `0${0}`; 
+    document.getElementById("minutes").textContent = `0${5}`;
+    document.getElementById("seconds").textContent = `0${0}`; 
 }
 
 function longBreak() {
-    document.getElementById("minutes").innerHTML = 15;
-    document.getElementById("seconds").innerHTML = `0${0}`;
+    document.getElementById("minutes").textContent = 15;
+    document.getElementById("seconds").textContent = `0${0}`;
 }
 
 //active function navigation
@@ -66,28 +66,28 @@ function timer() {
     //Work Timer Countdown
     // console.log(`start timer inside timer function is ${startTimer}`)
 
-    if (d_seconds.innerText != 0) {   // taking the default seconds and decerement 
+    if (d_seconds.textContent != 0) {   // taking the default seconds and decerement 
       
-        d_seconds.innerText--;
+        d_seconds.textContent--;
 
-        if (d_seconds.innerText < 10) { //to make 9 below with 0 at the begining 
+        if (d_seconds.textContent < 10) { //to make 9 below with 0 at the begining 
 
-            d_seconds.innerText = "0" + d_seconds.innerText--;
+            d_seconds.textContent = "0" + d_seconds.textContent--;
             console.log("if is working") // for testing
         }
-    } else if (d_minutes.innerText != 0 && d_seconds.innerText == 0) { //pass another 59 seconds if minutes changes
-        d_seconds.innerText = 59;
-        d_minutes.innerText--;
+    } else if (d_minutes.textContent != 0 && d_seconds.textContent == 0) { //pass another 59 seconds if minutes changes
+        d_seconds.textContent = 59;
+        d_minutes.textContent--;
 
         console.log("Else if working");
-        if (d_seconds.innerText < 10) {
-            d_seconds.innerText = "0" + d_seconds.innerText--;
+        if (d_seconds.textContent < 10) {
+            d_seconds.textContent = "0" + d_seconds.textContent--;
 
-        } else if (d_minutes.innerText < 10){
+        } else if (d_minutes.textContent < 10){
 
-            d_minutes.innerText = "0" + d_minutes.innerText--;
+            d_minutes.textContent = "0" + d_minutes.textContent--;
         }
-    } else if (d_minutes.innerText == 00 && d_seconds.innerText == 00) { //process when the timer is done
+    } else if (d_minutes.textContent == 00 && d_seconds.textContent == 00) { //process when the timer is done
       
          audio.play();
          alert("timer done")
@@ -122,7 +122,7 @@ function Start() {
     clickSound.play();
     mixBut.removeEventListener("click", Start);
     mixBut.addEventListener("click", Stop);
-    mixBut.innerText = "Stop";
+    mixBut.textContent = "Stop";
     timer();
 }
 
@@ -131,7 +131,7 @@ function Stop() {
     clickSound.play();
     mixBut.removeEventListener("click", Stop);
     mixBut.addEventListener("click", Start);
-    mixBut.innerText = "Start";
+    mixBut.textContent = "Start";
     stopInterval()
 }
 
@@ -184,5 +184,5 @@ var edit = document.getElementById("edit-task");
 var taskName = document.getElementById("task-name")
 edit.addEventListener('click', function () {
     var task = prompt("Enter a Task")
-    document.getElementById("task-name").innerHTML = task;
+    document.getElementById("task-name").textContent = task;
 })

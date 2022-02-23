@@ -1,5 +1,5 @@
 //audio file 
-var audio = new Audio('https://soundbible.com/mp3/service-bell_daniel_simion.mp3');
+var audio = new Audio('sounds/Bell.mp3');
 
 // Display for current time
 var dt = new Date();
@@ -20,7 +20,7 @@ function pomodoro() {
 
 function shortBreak() {
     document.getElementById("minutes").textContent = `0${5}`;
-    document.getElementById("seconds").textContent = `0${0}`; 
+    document.getElementById("seconds").textContent = `0${0}`;
 }
 
 function longBreak() {
@@ -66,8 +66,8 @@ function timer() {
     //Work Timer Countdown
     // console.log(`start timer inside timer function is ${startTimer}`)
 
-    if (d_seconds.textContent != 0) {   // taking the default seconds and decerement 
-      
+    if (d_seconds.textContent != 0) { // taking the default seconds and decerement 
+
         d_seconds.textContent--;
 
         if (d_seconds.textContent < 10) { //to make 9 below with 0 at the begining 
@@ -83,15 +83,15 @@ function timer() {
         if (d_seconds.textContent < 10) {
             d_seconds.textContent = "0" + d_seconds.textContent--;
 
-        } else if (d_minutes.textContent < 10){
+        } else if (d_minutes.textContent < 10) {
 
             d_minutes.textContent = "0" + d_minutes.textContent--;
         }
     } else if (d_minutes.textContent == 00 && d_seconds.textContent == 00) { //process when the timer is done
+
       
-         audio.play();
-         alert("timer done")
-       // below is to change the value when switching tab 
+        alert("timer done")
+        // below is to change the value when switching tab 
         var page = document.getElementsByClassName("nav-link active");
 
         if (page[0].textContent == "Short Break") {
@@ -113,7 +113,7 @@ function timer() {
 
 ////////////////////////////////////////////
 //start and stop
-var clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
+var clickSound = new Audio('sounds/mouseClick.mp3');
 var mixBut = document.getElementById("mixBut");
 mixBut.addEventListener("click", Start);
 
